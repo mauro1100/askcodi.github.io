@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    section {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  </style>
+  <title>Professional Product Listing for Gamers</title>
+</head>
+<body>
+  <header>
+    <h1>Professional Product Listing for Gamers</h1>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="home">
+    <h2>Welcome to our Gamer's Store</h2>
+    <p>Explore our latest gaming products and accessories.</p>
+  </section>
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div id="product-list">
+      <!-- Product listing can be dynamically generated using JavaScript -->
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@gamerstore.com</p>
+  </section>
+  <footer>
+    <p>&copy; 2022 Gamer's Store - All rights reserved</p>
+  </footer>
+  <script>
+    // JavaScript code for dynamically generating product listing
+    const products = [
+      { name: "Gaming Mouse", price: "$49.99" },
+      { name: "Gaming Keyboard", price: "$79.99" },
+      { name: "Gaming Headset", price: "$99.99" }
+    ];
+
+    const productList = document.getElementById('product-list');
+    products.forEach(product => {
+      const productItem = document.createElement('div');
+      productItem.innerHTML = `<h3>${product.name}</h3><p>${product.price}</p>`;
+      productList.appendChild(productItem);
+    });
+  </script>
+</body>
+</html>
