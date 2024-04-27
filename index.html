@@ -21,14 +21,17 @@
             text-decoration: none;
             margin: 0 10px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        main {
+            padding: 20px;
         }
         .product {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            max-width: 200px;
+            margin-right: 20px;
         }
         footer {
             background-color: #333;
@@ -40,31 +43,47 @@
             width: 100%;
         }
     </style>
-    <title>Product Listing</title>
+    <title>Gamer's Product Listing</title>
 </head>
 <body>
     <header>
-        <h1>Product Listing</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Products</a>
-            <a href="#">About</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
-    <div class="product">
-        <h2>Product 1</h2>
-        <img src="product1.jpg" alt="Product 1">
-        <p>Description of Product 1</p>
-        <button>Add to Cart</button>
-    </div>
-    <div class="product">
-        <h2>Product 2</h2>
-        <img src="product2.jpg" alt="Product 2">
-        <p>Description of Product 2</p>
-        <button>Add to Cart</button>
-    </div>
+    <main>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <div>
+                <h2>Product 1</h2>
+                <p>Description of Product 1</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <div>
+                <h2>Product 2</h2>
+                <p>Description of Product 2</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <div>
+                <h2>Product 3</h2>
+                <p>Description of Product 3</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
     <footer>
-        &copy; 2023 Product Listing for Gamers
+        &copy; 2021 Gamer's Paradise
     </footer>
+    <script>
+        // JavaScript code can be added here for interactivity
+    </script>
 </body>
 </html>
